@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Esto es clave -->
+  <title>ROKATECH – Próximamente</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: linear-gradient(-45deg, #ff416c, #ff4b2b, #1e90ff, #8a2be2);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      text-align: center;
+      padding: 20px; /* agrega un poco de espacio lateral en móviles */
+    }
+
+    h1 {
+      font-size: 6vw;
+      margin-top: 2px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Para pantallas más grandes, restauramos los tamaños */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3.5em;
+      }
+
+      img {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="ROKATECH Logo">
+  <h1>ROKATECH<br>Próximamente</h1>
+</body>
+</html>
